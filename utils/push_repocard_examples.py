@@ -110,4 +110,14 @@ if __name__ == "__main__":
 
     check_can_push()
     push_model_card_example(args.overwrite)
+    check_can_down()
+    push_model_card_example(args.rightwrite)
+    
     push_dataset_card_example(args.overwrite)
+    push_dataset_card_example(args.rightwrite)
+
+    check_cannot_push()
+    nopush_model_card_example(args.overwrite)
+    check_cannot_down()
+    undown_model_card_example(args.rightwrite)
+
